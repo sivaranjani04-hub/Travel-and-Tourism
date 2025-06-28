@@ -1,1 +1,620 @@
+<!--doctype html-->
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--==Title============================================================-->
+<title>Travel Website</title>
+
+<!--==Stylesheet=======================================================-->
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+<!--==Fav-icon=========================================================-->
+<link rel="shortcut icon" href="images/fav-icon.png"/>
+
+<!--==Using-Font-Awesome-for-Icons=====================================-->
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+<!--==Import-Poppins-Font-Family-From-Google-Font======================-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+</head>
+
+<body>
+
+    <!--==Navigation=============================-->
+    <nav class="navigation">
+
+        <!--logo-->
+        <a href="index.html" class="logo"><i class="fab fa-phoenix-framework"></i>Travel</a>
+        
+        <!--menu-btn-->
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+        </label>
+
+        <!--menu-->
+        <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#trending">Trending</a></li>
+            <li><a href="#destination">Destination</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+
+        <!--book-now-btn-->
+            <a href="#" class="book-now-btn">Book Now</a>
+
+    </nav>
+    <!--nav-end-->
+
+    
+    
+    <!--==main==============================-->
+    <section id="main">
+    <div class="content">
+        <!--text-->
+        <div class="main-text">
+            <strong>Explore The World <i class="fas fa-globe-americas"></i></strong>
+            <h1>It's a Big World Out There, Go Explore</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ab nesciunt possimus blanditiis amet! </p>
+            <a href="#">Book Online</a>
+        </div>
+        <!--img-->
+        <div class="main-img">
+            <img alt="Traveling" src="images/main.png">
+        </div>
+    </div>
+
+
+
+    <!--==Search-Tour=====================-->
+    <div class="search-tour">
+    <form>
+        <!--Location-->
+        <div class="t-search-box">
+            <div class="s-b-icon">
+                <i class="fas fa-map-marker-alt"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="1em"  width="1em" ><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+            </div>
+            <div class="s-b-input">
+                <span>Location <i class="fas fa-chevron-down"></i></span>
+                <input type="text" name="location" placeholder="New York, USA" required/>
+            </div>
+        </div>
+        <!--Date-->
+        <div class="t-search-box">
+            <div class="s-b-icon">
+                <i class="far fa-calendar-alt"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em"  width="1em"><path d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"/></svg>
+            </div>
+            <div class="s-b-input">
+                <span>Tour Date <i class="fas fa-chevron-down"></i></span>
+                <input type="date" id="tourdate" name="tourdate" required/>
+            </div>
+        </div>
+        <!--Guest-->
+        <div class="t-search-box">
+            <div class="s-b-icon">
+                <i class="fas fa-users"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em"  width="1em" ><path d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg>
+            </div>
+            <div class="s-b-input">
+                
+                <span>Persons
+                    
+                <i class="fas fa-chevron-down"></i></span>
+                <input type="number" name="total-tourist" placeholder="5 Tourist" required/>
+            </div>
+        </div>
+        <!--Btn-->
+        <div class="t-search-btn">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="1em"  width="1em" ><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                <i class="fas fa-search"></i></button>
+        </div>
+
+    </form>
+    </div>
+    </section>
+
+
+
+    <!--==Trending===========================-->
+    <section id="trending">
+
+        <!--heading-container************-->
+        <div class="trending-heading-container">
+            <!--heading-->
+            <div class="trending-heading">
+                <h2>Trending 2025</h2>
+                <p>Sost Brilliant reasons Entrada should be your one-stop-stop!</p>
+            </div>
+            <!--btns-->
+        </div>
+
+        <!--==trend-box-container==============-->
+        <div class="trending-box-container">
+
+        <!-- Swiper Slider -->
+        <div class="swiper mySwipercard">
+        <div class="swiper-wrapper">
+
+            <!--**Slide-1*******************-->
+            <div class="swiper-slide">
+                <!--box**********-->
+            <div class="trending-box">
+                <!--img-->
+                <div class="t-b-img">
+                    <img alt="Travel" src="images/t-1.jpg">
+                </div>
+                <!--text-->
+                <div class="t-b-text">
+                    <a href="#">Forest Wild Life</a>
+                    <span>12 Places | 3 Activites</span>
+                </div>
+                <!--price-&-Book-->
+                <div class="price-book">
+                    <span class="t-price">200$</span>
+                    <a href="#" class="t-book-btn">Book Now</a>
+                </div>
+                <!--agency-name-->
+                <div class="agency-name">
+                    <img alt="Agence Logo" src="images/Agency_Name.png">
+                    <span>Agence Name</span>
+                </div>
+            </div>
+            </div>
+
+
+            <!--**Slide-1*******************-->
+            <div class="swiper-slide">
+                <!--box**********-->
+            <div class="trending-box">
+                <!--img-->
+                <div class="t-b-img">
+                    <img alt="Travel" src="images/t-2.jpg">
+                </div>
+                <!--text-->
+                <div class="t-b-text">
+                    <a href="#">Forest Wild Life</a>
+                    <span>12 Places | 3 Activites</span>
+                </div>
+                <!--price-&-Book-->
+                <div class="price-book">
+                    <span class="t-price">200$</span>
+                    <a href="#" class="t-book-btn">Book Now</a>
+                </div>
+                <!--agency-name-->
+                <div class="agency-name">
+                    <img alt="Agence Logo" src="images/Agency_Name.png">
+                    <span>Agence Name</span>
+                </div>
+            </div>
+            </div>
+
+
+            <!--**Slide-1*******************-->
+            <div class="swiper-slide">
+                <!--box**********-->
+            <div class="trending-box">
+                <!--img-->
+                <div class="t-b-img">
+                    <img alt="Travel" src="images/t-3.webp">
+                </div>
+                <!--text-->
+                <div class="t-b-text">
+                    <a href="#">Forest Wild Life</a>
+                    <span>12 Places | 3 Activites</span>
+                </div>
+                <!--price-&-Book-->
+                <div class="price-book">
+                    <span class="t-price">200$</span>
+                    <a href="#" class="t-book-btn">Book Now</a>
+                </div>
+                <!--agency-name-->
+                <div class="agency-name">
+                    <img alt="Agence Logo" src="images/Agency_Name.png">
+                    <span>Agence Name</span>
+                </div>
+            </div>
+            </div>
+
+
+            <!--**Slide-1*******************-->
+            <div class="swiper-slide">
+                <!--box**********-->
+            <div class="trending-box">
+                <!--img-->
+                <div class="t-b-img">
+                    <img alt="Travel" src="images/t-4.jpg">
+                </div>
+                <!--text-->
+                <div class="t-b-text">
+                    <a href="#">Forest Wild Life</a>
+                    <span>12 Places | 3 Activites</span>
+                </div>
+                <!--price-&-Book-->
+                <div class="price-book">
+                    <span class="t-price">200$</span>
+                    <a href="#" class="t-book-btn">Book Now</a>
+                </div>
+                <!--agency-name-->
+                <div class="agency-name">
+                    <img alt="Agence Logo" src="images/Agency_Name.png">
+                    <span>Agence Name</span>
+                </div>
+            </div>
+            </div>
+
+
+            <!--**Slide-1*******************-->
+            <div class="swiper-slide">
+                <!--box**********-->
+            <div class="trending-box">
+                <!--img-->
+                <div class="t-b-img">
+                    <img alt="Travel" src="images/t-5.jpg">
+                </div>
+                <!--text-->
+                <div class="t-b-text">
+                    <a href="#">Forest Wild Life</a>
+                    <span>12 Places | 3 Activites</span>
+                </div>
+                <!--price-&-Book-->
+                <div class="price-book">
+                    <span class="t-price">200$</span>
+                    <a href="#" class="t-book-btn">Book Now</a>
+                </div>
+                <!--agency-name-->
+                <div class="agency-name">
+                    <img alt="Agence Logo" src="images/Agency_Name.png">
+                    <span>Agence Name</span>
+                </div>
+            </div>
+            </div>
+
+
+            <!--**Slide-1*******************-->
+            <div class="swiper-slide">
+                <!--box**********-->
+            <div class="trending-box">
+                <!--img-->
+                <div class="t-b-img">
+                    <img alt="Travel" src="images/t-6.jpg">
+                </div>
+                <!--text-->
+                <div class="t-b-text">
+                    <a href="#">Forest Wild Life</a>
+                    <span>12 Places | 3 Activites</span>
+                </div>
+                <!--price-&-Book-->
+                <div class="price-book">
+                    <span class="t-price">200$</span>
+                    <a href="#" class="t-book-btn">Book Now</a>
+                </div>
+                <!--agency-name-->
+                <div class="agency-name">
+                    <img alt="Agence Logo" src="images/Agency_Name.png">
+                    <span>Agence Name</span>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        </div>
+
+        </div>
+
+    </section>
+
+
+    <!--==Destination===========================-->
+    <section id="destination">
+
+            <!--heading******************-->
+            <div class="destination-heading">
+                <h2>TOP Destinations</h2>
+                <p>Sost Brilliant reasons Entrada should be your one-stop-stop!</p>
+            </div>
+
+            <!--destination-grid*********-->
+            <div class="destination-grid">
+
+                <!--box=======-->
+                <div class="destination-box d-b-1">
+                    <img alt="Destination" src="images/d-1.jpg"/>
+                    <!--text-->
+                    <div class="d-b-text-container">
+                        <span class="ration">3.5</span>
+                        <div class="d-b-text">
+                            <strong>Vientam</strong>
+                            <span>Worefall</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--box=======-->
+                <div class="destination-box d-b-2">
+                    <img alt="Destination" src="images/d-2.jpg"/>
+                    <!--text-->
+                    <div class="d-b-text-container">
+                        <span class="ration">3.5</span>
+                        <div class="d-b-text">
+                            <strong>Vientam</strong>
+                            <span>Worefall</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--box=======-->
+                <div class="destination-box d-b-3">
+                    <img alt="Destination" src="images/d-3.jpg"/>
+                    <!--text-->
+                    <div class="d-b-text-container">
+                        <span class="ration">3.5</span>
+                        <div class="d-b-text">
+                            <strong>Vientam</strong>
+                            <span>Worefall</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--box=======-->
+                <div class="destination-box d-b-4">
+                    <img alt="Destination" src="images/d-4.webp"/>
+                    <!--text-->
+                    <div class="d-b-text-container">
+                        <span class="ration">3.5</span>
+                        <div class="d-b-text">
+                            <strong>Vientam</strong>
+                            <span>Worefall</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--box=======-->
+                <div class="destination-box d-b-5">
+                    <img alt="Destination" src="images/d-5.jpg"/>
+                    <!--text-->
+                    <div class="d-b-text-container">
+                        <span class="ration">3.5</span>
+                        <div class="d-b-text">
+                            <strong>Vientam</strong>
+                            <span>Worefall</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--box=======-->
+                <div class="destination-box d-b-6">
+                    <img alt="Destination" src="images/d-6.webp"/>
+                    <!--text-->
+                    <div class="d-b-text-container">
+                        <span class="ration">3.5</span>
+                        <div class="d-b-text">
+                            <strong>Vientam</strong>
+                            <span>Worefall</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+    <!--==Testimonials========================-->
+    <section id="testimonials">
+
+        <!--**Img******************************-->
+        <div class="testmonials-img">
+            <img alt="Tour" src="images/testimonials-img.png"/>
+        </div>
+
+        <!--**Slider***************************-->
+        <div class="testmonials-slider">
+
+        <!-- Swiper -->
+        <div class="swiper mySwipertest">
+        <div class="swiper-wrapper">
+            <!--1-->
+            <div class="swiper-slide">
+            <!--==box============-->
+            <div class="testimonials-box">
+            <!--text-->
+            <div class="testimonials-box-text">
+                <i class="fas fa-quote-left"></i>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cupiditate commodi.</p>
+                <strong>Alex Falcan</strong>
+            </div>
+            <!--img-->
+            <div class="testimonials-box-img">
+                <img alt="Testimonials" src="images/t-member.jpg">
+            </div>
+            </div>
+            </div><!--slide-end-->
+            <!--2-->
+            <div class="swiper-slide">
+            <!--==box============-->
+            <div class="testimonials-box">
+            <!--text-->
+            <div class="testimonials-box-text">
+                <i class="fas fa-quote-left"></i>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cupiditate commodi.</p>
+                <strong>Alex Falcan</strong>
+            </div>
+            <!--img-->
+            <div class="testimonials-box-img">
+                <img alt="Testimonials" src="images/t-member.jpg">
+            </div>
+            </div>
+            </div><!--slide-end-->
+            <!--3-->
+            <div class="swiper-slide">
+            <!--==box============-->
+            <div class="testimonials-box">
+            <!--text-->
+            <div class="testimonials-box-text">
+                <i class="fas fa-quote-left"></i>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cupiditate commodi.</p>
+                <strong>Alex Falcan</strong>
+            </div>
+            <!--img-->
+            <div class="testimonials-box-img">
+                <img alt="Testimonials" src="images/t-member.jpg">
+            </div>
+            </div>
+            </div><!--slide-end-->
+            
+        </div>
+        <div class="swiper-pagination"></div>
+        </div>
+
+        
+    </div>
+    </section>
+
+
+    <!--==Subscribe===========================-->
+    <section id="subscribe">
+        <strong>Subscribe our newsletter</strong>
+        <p>Reacive Latest News, Updates, and other things every weak.</p>
+        <form>
+            <input type="email" name="subscribe" placeholder="Enter Your Email Address" required/>
+            <button><i class="fas fa-paper-plane"></i></button>
+        </form>
+    </section>
+
+
+
+
+    <!--==footer===============================-->
+    <footer>
+        <!--container**********************-->
+        <div class="footer-container">
+
+            <!--footer-box********************-->
+            <div class="footer-box">
+                <strong><i class="fab fa-phoenix-framework"></i> Travel</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fuga</p>
+                <div class="footer-social">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--footer-box***********************-->
+            <div class="footer-box">
+                <strong>Links</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Book Online</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <!--footer-box***********************-->
+            <div class="footer-box">
+                <strong>Social</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Book Online</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <!--footer-box***********************-->
+            <div class="footer-box">
+                <strong>External</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Book Online</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!--**Footer-box*******************-->
+            <div class="footer-box">
+                <strong>Contact</strong>
+                <span><i class="fas fa-map-marker-alt"></i> New York, United Sate</span>
+                <span><i class="far fa-envelope"></i> <a href="#">Example@gmail.com</a></span>
+                <span><i class="fas fa-phone-square-alt"></i><a href="#">0123456789</a></span>
+            </div>
+
+        </div>
+    </footer>
+    <span class="copyright">GoingToInternet 2021 - All Copyright Reserved</span>
+
+
+
+
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript">
+         var swiper = new Swiper(".mySwipercard", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween:20,
+          },
+        },
+      });
+
+      var swiper = new Swiper(".mySwipertest", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+</body>
+
+</html>
 
